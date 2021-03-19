@@ -18,4 +18,8 @@
 - measurement
 - prescription_preperation_instruction
 
-
+# Clinical
+- clinical_cardiovascular
+- clinical_gastrointestinal
+- misc_medical_terms_clinical
+- common_medication_abbr

@@ -311,12 +311,12 @@ prescription_abbr_lst = [
 
 #clinical
 
-# clinical_definitions_lst = [
-#     clinical_cardiovascular,
-#     clinical_gastrointestinal,
-#     misc_medical_terms_clinical,
-#     common_medication_abbr
-# ]
+clinical_definitions_lst_names = [
+    "clinical_cardiovascular",
+    "clinical_gastrointestinal",
+    "misc_medical_terms_clinical",
+    "common_medication_abbr"
+]
 
 clinical_cardiovascular = {
     "hypertension":["HTN"],
