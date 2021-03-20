@@ -391,3 +391,14 @@ clinical_definitions_lst = [
     misc_medical_terms_clinical,
     common_medication_abbr
 ]
+
+
+#Key definitions
+
+key_definitions = {
+    'plist': ' plist is the mdeications that have been identified as being acutley toxic if disposed of incorrectly',
+    'garbing': ' Garbing the process of putting on the proper clothing in a specific order',
+    'bio hazardous': ' Bio Hazardous is any waste that could possibly contain infectious material such as blood',
+    'aseptic techniques': ' Aseptic Technique is a procedure designed to remove the potential for the contamination of drugs ',
+    'ulist': ' ulist is the list of medications that are toxic, flammable, or reactive and are considered hazardous'
+}
