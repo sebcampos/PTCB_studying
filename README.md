@@ -193,5 +193,49 @@ The skin or `dermis` is comprised of multiple layers. The outer layer is the `ep
 Topical steroids such as _Hydrocortisone_ are commonly used to treat skin conditions
 
 ## Musculoskeletal
+### Anatomy and Function
+Bones basic supporting frame of the body. Cartilage found between bones provide smooth and painless motion. Bones and joints supported structureally via ligaments and muscles connected via tendons.
+
+### Common Conditions
+- Osteoarthritis
+    - Progressive destruction of joint cartilage especially in weight bearing joints. Formation of bone spurs is a common complication that limits joint motion and causes pain
+
+- Rheumatoid Arthritis is a systematic immune mediated disease characterized by inflammation of the joints and destruction of the join cartilage
+
+- Osteoporosis is most commonly an age related loss of bone mass which weakens the bone and increases the risk of fractures. Common sites of fracture include cervical (upper portion), spine, hip, and extremities. A common drug to treat osteoporosis is fosmax with its generic equivalent called alendronate
+
+Other drugs used to treat conditions related to the musculoskeletal include NSAIDS (such as ibuprofen and naproxen) and lidoderm patches
+
+## Neurologic
+### Anatomy and Functions
+The major components of the neurologic system are the brain, spinal cord, and nerves. The major Functions of the nervous system are to coordinate voluntary motor (muscle) movement based on sensory input from peripheral nerves to regulate involantary muscle control and bodily functions.
+
+### Common Conditions
+- Headaches
+    - Tension headaches typically dull aching neck stiffness or tightness associated with stress anxiety and eye strain. Medications include ibuprofen, acetaminophen or naproxen
+
+    - Migrane headache unilateral (one side of the head) throbbing, sensitivity to light and or sound. Triptan Medications are effective against this
+
+Common drug to trate all headaches is Indernal (propranolol)
+
+- Nerve pain
+    - nerve damage is commonly treated with Neurontin (Gabapentin)
+
+- Seizures
+    - Sudden electrical activity in the brain. Usually affects how a persaon appears or acts for a short time. Common drugs to treat siezures include neurontin (Gabapentin), klonopin, ativan (lorezepam), lamictal (lamotrigine) and lyrica (pregabalin)
+
+## Endocrine System
+
+### Anatomy and Function
+Collection of different glands throughout the body that secrete substances (hormones) to help regulate other parts of the body. Includes the hypothalamus, pituitary, thyroid, and adrenal glands. These work collectiveley to stimulate and inhibit hormone release.
+
+Most common issues occur in the thyroid and pancreas
+
+### Common Conditions
+- Diabetes Mellitus (pancreous)
+    - Insufficient insulin production by pancreous (Type 1) or insufficient response to insulin by tissues (Type 2). Common Drugs to treat are glucophage (metformin) or lantus solostar (glargine) or Gluctrol (glipizide) or amaryl (glimepiride) or humalog (insulin lispro)
+
+- Hypothyroidism and Hyperthyroidism
+    - Commonly treated with levothryoxine (synthroid) results because the thyroid is over producing or underproducing either t3 or t4
 
 
