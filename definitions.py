@@ -120,7 +120,7 @@ medical_terms_extended = {
     "inflammation of the skin tissues":["cellunitis"],
     "tissue swelling due to fluid accumulation":["edema"],
     "redness":["erythema"],
-    "disease cayse by bacterial, viral, fungal, parasitic pathogens":["infection"],
+    "disease caused by bacterial, viral, fungal, parasitic pathogens":["infection"],
     "yellow color of the tissues":["jaundice"],
     "ragged tear in skin":["laceration"],
     "abnormal visual change in tissue appearance":["lesion"],
@@ -132,7 +132,7 @@ medical_terms_extended = {
     "procedure to remove toxic substances from the blood (ie in patients with severe kidney failure)":["dialysis"],
     "UTI (kidney-bladder)":["urinary tract infection"],
     "to eliminate(ie urnination)":["void"],
-    "reduction in number of red blood cells(important to carry oxygen to tissues":["anemia"],
+    "reduction in number of red blood cells(important to carry oxygen to tissues)":["anemia"],
     "reduction in number of white blood cells(important to fight infections)":["leukopenia"],
     "reduction in number of platelets(important for blood clot formation)":["thombocytopenia"],
     "low blood pressure":["hypotension"],
@@ -146,7 +146,7 @@ medical_terms_extended = {
     "ringing of the ears":["tinnitus"],
     "inflammation of middle ear":["otitus media"],
     "eye condition associated with increased pressure within the eyes":["glaucoma"],
-    "eye condition associated with clouding of the eye lens":["cataract"],
+    "eye condition associated with clouding of the eye lens":["cataract","cataracts"],
     "inflammatory disease of joints caused by uric acid crystals deposition":["gout"],
     "inflammatory disease of joints and tissue caused by abnormal immune system":["rheumatoid arthritis"],
     "loss of counciousness; pass out":["syncope"],
@@ -155,10 +155,10 @@ medical_terms_extended = {
     "sudden decrease in blood supply to brain that resolves (within 1 hour) without permanent neurologic damage":["transient ischemic attack"],
     "intense throbbing heacache disorder that can be accompanied by altered sensations nausea and vommiting":["migraine"],
     "progressive neurologic degeneration causing fatigue impaired balance coordination and vision changes":["multiple sclerosis"],
-    "chronic neurologic degeneration causing muscle rigidity tremors (shaking extremities) at rest, loss of facial expression, shuffled gait(walking pattern)":["parkinsons disease"],
+    "chronic neurologic degeneration causing muscle rigidity tremors (shaking extremities) at rest, loss of facial expression, shuffled gait(walking pattern)":["parkinsons disease", "parkinsons"],
     "disease characterized by mood swings from depression to mania":["bipolar disorder"],
     "disease characterized by high blood sugar caused by insufficent amount of insulin or bodys resistance to insulin effects":["diabetes mellitus"],
-    "low or high amount of thyroid hormones":["hypo- hyper-thyroidism"]
+    "low or high amount of thyroid hormones":["hyperthyroidism","hypothyroidism"]
 }
 
 
@@ -198,7 +198,7 @@ frequency = {
     "every morning":["qam"],
     "every evening":["qpm"],
     "at bedtime":["qhs"],
-    "every _ hour":["q _ h(q4h every four hours)"],
+    "every _ hour":["q_h","q _ h(q4h every four hours)"],
     "around the clock":["atc"],
     "before meals":["ac"],
     "after meals":["pc"],
@@ -293,7 +293,7 @@ prescription_preperation_instruction = {
     "apply":["appl"],
     "make":["ft"],
     "mix":["m"],
-    "write directions (on label)":["sig"],
+    "writen directions (on label)":["sig"],
     "with":["c"],
     "without":["s"],
     "dilute":["dil"],
@@ -331,7 +331,7 @@ clinical_cardiovascular = {
     "myocardinal infarction":["MI"],
     "cardiopulmonary resuscitation":["CPR"],
     "Coronary artery bypass graft (surgical procedure)":["CABG"],
-    "Electrocardiogram (measurement of heart electrical activity":["EKG or ECG"]
+    "Electrocardiogram (measurement of heart electrical activity)":["EKG","ECG"]
 }
 
 clinical_gastrointestinal = {
@@ -349,7 +349,7 @@ misc_medical_terms_clinical = {
     "urine analysis":["UA"],
     "intraocular pressure(pressure in the eye)":["IOP"],
     "chronic obstrutive pulomary disease":["COPD"],
-    "status post":["s/p"],
+    "status post":["s","p"],
     "shortness of breath":["SOB"],
     "blood sugar":["BS"],
     "fasting blood sugar":["FBS"],
