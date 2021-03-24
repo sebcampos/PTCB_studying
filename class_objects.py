@@ -5,7 +5,7 @@ import os
 for i in key_definitions.values():
     print(i)
 
-print("Objects:\n\nMedicalTerms\nPrescriptionAbbreviations\nClinicalTerms")
+print("\n\nObjects:\n\nMedicalTerms\nPrescriptionAbbreviations\nClinicalTerms")
 
 
 class MedicalTerms:
