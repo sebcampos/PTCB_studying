@@ -14,7 +14,7 @@ pandas.set_option('display.width', None)
 for i in key_definitions.values():
     print(i)
 
-print("\n\nObjects:\n\nMedicalTerms\nPrescriptionAbbreviations\nClinicalTerms")
+print("\n\nObjects:\n\nMedicalTerms\nPrescriptionAbbreviations\nClinicalTerms\nCommonlyPrescribedDrugs")
 
 
 
@@ -145,5 +145,6 @@ class CommonlyPrescribedDrugs:
         print("Commonly Prescribed Drugs Columns:\n")
         for i in self.df.columns:
             print(i)
+        return ""
     def quiz():
         pass
