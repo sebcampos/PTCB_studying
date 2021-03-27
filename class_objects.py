@@ -1,5 +1,14 @@
 from definitions import *
 import os
+import pandas
+import datetime
+
+today = str(datetime.datetime.today().date())
+
+pandas.set_option('display.max_rows', None)
+pandas.set_option('display.max_columns', None)
+pandas.set_option('display.width', None)
+# pandas.set_option('display.max_colwidth', None)
 
 
 for i in key_definitions.values():
@@ -8,14 +17,22 @@ for i in key_definitions.values():
 print("\n\nObjects:\n\nMedicalTerms\nPrescriptionAbbreviations\nClinicalTerms")
 
 
+
+
 class MedicalTerms:
     def __init__(self, date):
         self.date = date
         self.score = 0
+        dictionary={}
+        for i in medical_terms_lst_definitions:
+            for x,y in i.items():
+                dictionary[x] = [", ".join(y)]
+        self.df = pandas.DataFrame(dictionary).T 
     def __repr__(self):
         print(f"Medical Terms Glossary\n{self.date}\n")
         for i in medical_terms_lst_definitions_names:
             print(i)
+        print("\nAttributes:\ndate\nscore\ndf\n\nFunctions:\nquiz(option=all)")
         return ""
     def quiz(self, option="all"):
         self.score = 0
@@ -45,10 +62,16 @@ class PrescriptionAbbreviations:
     def __init__(self, date):
         self.date = date
         self.score = 0
+        dictionary={}
+        for i in prescription_abbr_lst:
+            for x,y in i.items():
+                dictionary[x] = [", ".join(y)]
+        self.df = pandas.DataFrame(dictionary).T 
     def __repr__(self):
         print(f"Prescription Abbreviations Glossary\n{self.date}\n")
         for i in prescription_abbr_lst_names:
             print(i)
+        print("\nAttributes:\ndate\nscore\ndf\n\nFunctions:\nquiz(option=all)")
         return ""
     def quiz(self, option="all"):
         self.score = 0
@@ -78,10 +101,16 @@ class ClinicalTerms:
     def __init__(self, date):
         self.date = date
         self.score = 0
+        dictionary={}
+        for i in clinical_definitions_lst:
+            for x,y in i.items():
+                dictionary[x] = [", ".join(y)]
+        self.df = pandas.DataFrame(dictionary).T 
     def __repr__(self):
         print(f"Clinical Terms Glossary\n{self.date}\n")
         for i in prescription_abbr_lst_names:
             print(i)
+        print("\nAttributes:\ndate\nscore\ndf\n\nFunctions:\nquiz(option=all)")
         return ""
     def quiz(self, option="all"):
         os.system("clear")
@@ -107,3 +136,14 @@ class ClinicalTerms:
             print(f"Score for PrescriptionAbbreviations: {self.score / total_questions}")
             return "end"
 
+class CommonlyPrescribedDrugs:
+    def __init__(self, date):
+        self.date = date
+        self.score = 0
+        self.df = pandas.DataFrame(one_hundred_most_commonly_prescribed_drugs)
+    def __repr__(self):
+        print("Commonly Prescribed Drugs Columns:\n")
+        for i in self.df.columns:
+            print(i)
+    def quiz():
+        pass
