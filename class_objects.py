@@ -146,5 +146,20 @@ class CommonlyPrescribedDrugs:
         for i in self.df.columns:
             print(i)
         return ""
-    def quiz():
-        pass
+    def quiz(self):
+        for row in self.df.iterrows():
+            response = []
+            for column in self.df.columns[1:]:
+                print(f"Generic:\n{row[1][0]}\n\nEnter {column}:\n")
+                answer = input() 
+                if self.df.loc[self.df["Generic Name"] == row[1][0], column].item().lower().strip() == answer.lower().strip():
+                    response += [1]
+                    print("Correct")
+                    input()
+                    os.system("clear")
+                else:
+                    print("Incorrect:\n")
+                    print(self.df.loc[self.df["Generic Name"] == row[1][0], column].item())
+                    os.system("clear")
+            
+            print(sum(response))

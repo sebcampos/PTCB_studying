@@ -396,7 +396,7 @@ clinical_definitions_lst = [
 #Key definitions
 
 key_definitions = {
-    'plist': ' plist is the mdeications that have been identified as being acutley toxic if disposed of incorrectly',
+    'plist': ' plist is the medications that have been identified as being acutley toxic if disposed of incorrectly',
     'garbing': ' Garbing the process of putting on the proper clothing in a specific order',
     'bio hazardous': ' Bio Hazardous is any waste that could possibly contain infectious material such as blood',
     'aseptic techniques': ' Aseptic Technique is a procedure designed to remove the potential for the contamination of drugs ',
