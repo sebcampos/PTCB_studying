@@ -148,6 +148,7 @@ class CommonlyPrescribedDrugs:
         return ""
     def quiz(self):
         self.score = 0
+        os.system("clear")
         for row in self.df.iterrows():
             for column in self.df.columns[1:]:
                 print(f"Generic:\n{row[1][0]}\n\nEnter {column}:\n")
