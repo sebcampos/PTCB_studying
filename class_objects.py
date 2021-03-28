@@ -2,6 +2,10 @@ from definitions import *
 import os
 import pandas
 import datetime
+from connect_sql import build_engine
+
+
+engine = build_engine()
 
 today = str(datetime.datetime.today().date())
 
