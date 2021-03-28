@@ -152,10 +152,11 @@ class CommonlyPrescribedDrugs:
             for column in self.df.columns[1:]:
                 print(f"Generic:\n{row[1][0]}\n\nEnter {column}:\n")
                 answer = input() 
-                if self.df.loc[self.df["Generic Name"] == row[1][0], column].item().lower().strip() == answer.lower().strip():
+                if  answer.lower().strip() in self.df.loc[self.df["Generic Name"] == row[1][0], column].item().lower().strip().replace(" ","").split(","):
                     os.system("clear")
                     self.score += 1
                     print("Correct")
+                    print(self.df.loc[self.df["Generic Name"] == row[1][0], column].item())
                     input()
                     os.system("clear")
                 else:
