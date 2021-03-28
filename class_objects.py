@@ -145,15 +145,19 @@ class CommonlyPrescribedDrugs:
         print("Commonly Prescribed Drugs Columns:\n")
         for i in self.df.columns:
             print(i)
+
+        print(f"Medication Classes:\n{self.df['Class (selected meds only)'].value_counts()}\n\nBody System\n{self.df['Body System'].value_counts()}")
         return ""
-    def quiz(self):
+    def quiz(self, sort_by="False"):
         self.score = 0
         os.system("clear")
+        if sort_by != "False":
+            self.df = self.df.sort_values(sort_by)
         for row in self.df.iterrows():
             for column in self.df.columns[1:]:
                 print(f"Generic:\n{row[1][0]}\n\nEnter {column}:\n")
                 answer = input() 
-                if  answer.lower().strip() in self.df.loc[self.df["Generic Name"] == row[1][0], column].item().lower().strip().replace(" ","").split(","):
+                if  answer.lower().strip().replace(" ","") in self.df.loc[self.df["Generic Name"] == row[1][0], column].item().lower().strip().replace(" ","").split(","):
                     os.system("clear")
                     self.score += 1
                     print("Correct")
