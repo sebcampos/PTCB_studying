@@ -20,8 +20,8 @@ print("\n\nObjects:\n\nMedicalTerms\nPrescriptionAbbreviations\nClinicalTerms\nC
 
 
 class MedicalTerms:
-    def __init__(self, date):
-        self.date = date
+    def __init__(self):
+        self.date = today
         self.score = 0
         dictionary={}
         for i in medical_terms_lst_definitions:
@@ -59,8 +59,8 @@ class MedicalTerms:
             return "end"
 
 class PrescriptionAbbreviations:
-    def __init__(self, date):
-        self.date = date
+    def __init__(self):
+        self.date = today
         self.score = 0
         dictionary={}
         for i in prescription_abbr_lst:
@@ -98,8 +98,8 @@ class PrescriptionAbbreviations:
             return "end"
 
 class ClinicalTerms:
-    def __init__(self, date):
-        self.date = date
+    def __init__(self):
+        self.date = today
         self.score = 0
         dictionary={}
         for i in clinical_definitions_lst:
@@ -137,8 +137,8 @@ class ClinicalTerms:
             return "end"
 
 class CommonlyPrescribedDrugs:
-    def __init__(self, date):
-        self.date = date
+    def __init__(self):
+        self.date = today
         self.score = 0
         self.df = pandas.DataFrame(one_hundred_most_commonly_prescribed_drugs)
     def __repr__(self):
@@ -147,19 +147,21 @@ class CommonlyPrescribedDrugs:
             print(i)
         return ""
     def quiz(self):
+        self.score = 0
         for row in self.df.iterrows():
-            response = []
             for column in self.df.columns[1:]:
                 print(f"Generic:\n{row[1][0]}\n\nEnter {column}:\n")
                 answer = input() 
                 if self.df.loc[self.df["Generic Name"] == row[1][0], column].item().lower().strip() == answer.lower().strip():
-                    response += [1]
+                    os.system("clear")
+                    self.score += 1
                     print("Correct")
                     input()
                     os.system("clear")
                 else:
-                    print("Incorrect:\n")
-                    print(self.df.loc[self.df["Generic Name"] == row[1][0], column].item())
                     os.system("clear")
-            
-            print(sum(response))
+                    print("Incorrect:")
+                    print(self.df.loc[self.df["Generic Name"] == row[1][0], column].item())
+                    input()
+                    os.system("clear")
+        return f"Score: {self.score / 400}"
