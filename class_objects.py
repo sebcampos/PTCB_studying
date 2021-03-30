@@ -49,7 +49,6 @@ class MedicalTerms:
                     print(x)
                     answer = input("Enter Answer:\n")
                     total_questions +=1
-                    os.system("clear")
                     for var in y:
                         print(var)
                     if answer.lower() in [var.lower() for var in y]:
@@ -58,7 +57,7 @@ class MedicalTerms:
                     elif answer not in [var.lower() for var in y]:
                         print("False")
                     input("Enter to continue:\n")
-                    os.system("clear")
+                os.system("clear")
             print(f"Score for MedicalTerms: {self.score / total_questions}")
             return "end"
 
@@ -165,13 +164,13 @@ class CommonlyPrescribedDrugs:
                     os.system("clear")
                     self.score += 1
                     print("Correct")
-                    print(self.df.loc[self.df["Generic Name"] == row[1][0], column].item())
+                    print(self.df.loc[self.df["Generic Name"] == row[1][0], column].item().strip())
                     input()
                     os.system("clear")
                 else:
                     os.system("clear")
                     print("Incorrect:")
-                    print(self.df.loc[self.df["Generic Name"] == row[1][0], column].item())
+                    print(self.df.loc[self.df["Generic Name"] == row[1][0], column].item().strip())
                     input()
                     os.system("clear")
         return f"Score: {self.score / 400}"
