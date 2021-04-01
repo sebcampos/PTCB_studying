@@ -58,8 +58,14 @@ class MedicalTerms:
                         print("False")
                     input("Enter to continue:\n")
                 os.system("clear")
-            print(f"Score for MedicalTerms: {self.score / total_questions}")
-            return "end"
+            
+        print(f"Score for MedicalTerms: {self.score / total_questions}")
+        pandas.DataFrame({
+                "Subject":["Medical Terms"],
+                "Date":[self.date],
+                "Score":[self.score]
+                }).to_sql("Quiz Scores", index=False, con=engine, if_exists="append")
+        return "end"
 
 class PrescriptionAbbreviations:
     def __init__(self):
@@ -97,8 +103,13 @@ class PrescriptionAbbreviations:
                         print("False")
                     input("Enter to continue:\n")
                     os.system("clear")
-            print(f"Score for PrescriptionAbbreviations: {self.score / total_questions}")
-            return "end"
+        print(f"Score for PrescriptionAbbreviations: {self.score / total_questions}")
+        pandas.DataFrame({
+                "Subject":["Prescription Abbreviations"],
+                "Date":[self.date],
+                "Score":[self.score]
+                }).to_sql("Quiz Scores", index=False, con=engine, if_exists="append")
+        return "end"
 
 class ClinicalTerms:
     def __init__(self):
@@ -136,8 +147,13 @@ class ClinicalTerms:
                         print("False")
                     input("Enter to continue:\n")
                     os.system("clear")
-            print(f"Score for PrescriptionAbbreviations: {self.score / total_questions}")
-            return "end"
+        print(f"Score for PrescriptionAbbreviations: {self.score / total_questions}")
+        pandas.DataFrame({
+                "Subject":["Clinical Terms"],
+                "Date":[self.date],
+                "Score":[self.score]
+                }).to_sql("Quiz Scores", index=False, con=engine, if_exists="append")
+        return "end"
 
 class CommonlyPrescribedDrugs:
     def __init__(self):
@@ -173,4 +189,9 @@ class CommonlyPrescribedDrugs:
                     print(self.df.loc[self.df["Generic Name"] == row[1][0], column].item().strip())
                     input()
                     os.system("clear")
+        pandas.DataFrame({
+                "Subject":["Commonly Prescribed Drugs"],
+                "Date":[self.date],
+                "Score":[self.score]
+                }).to_sql("Quiz Scores", index=False, con=engine, if_exists="append")
         return f"Score: {self.score / 400}"
